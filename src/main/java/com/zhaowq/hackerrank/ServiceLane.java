@@ -1,4 +1,4 @@
-package com.zhaowq.leetcode;
+package com.zhaowq.hackerrank;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author zhaowq
  * @date 2015/6/3
  */
-public class Solution {
+public class ServiceLane {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
