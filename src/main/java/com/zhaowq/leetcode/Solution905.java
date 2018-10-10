@@ -20,7 +20,7 @@ import java.util.stream.IntStream;
  */
 public class Solution905 {
     /**
-     * 可以不开辟新空间，两头两个指针往中间走
+     * 可以不开辟新空间，两头两个指针往中间走，具体怎么编程？
      */
     public int[] sortArrayByParity(int[] A) {
         List<Integer> even = new ArrayList<Integer>();
