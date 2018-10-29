@@ -3,7 +3,7 @@ package com.zhaowq.hackerrank;
 import java.util.Scanner;
 
 /**
- * 历史久远，看不出来哪一题
+ * hacker rank题目
  *
  * @author zhaowq
  * @date 2015/6/3
