@@ -17,17 +17,6 @@ package com.zhaowq.leetcode;
  * @date 2016/1/3
  */
 public class Solution002 {
-    /**
-     * Definition for singly-linked list.
-     */
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 网络答案

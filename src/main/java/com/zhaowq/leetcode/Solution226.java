@@ -26,15 +26,6 @@ import java.util.Queue;
  * @date 2018/10/10
  */
 public class Solution226 {
-    /**
-     * Definition for a binary tree node.
-     * */
-    public class TreeNode {
-       int val;
-       TreeNode left;
-       TreeNode right;
-       TreeNode(int x) { val = x; }
-    }
 
     /**
      * recursive

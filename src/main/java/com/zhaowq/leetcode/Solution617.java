@@ -13,18 +13,6 @@ package com.zhaowq.leetcode;
  * @date 2018/10/10
  */
 public class Solution617 {
-    /**
-     * Definition for a binary tree node.
-     */
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t1 == null) {
