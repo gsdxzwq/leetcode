@@ -39,13 +39,7 @@ public class Trie {
             }
             p = p.children[index];
         }
-        if (p.isEndingChar == false) {
-            // 不能完全匹配，只是前缀
-            return false;
-        } else {
-            // 找到 pattern
-            return true;
-        }
+        return p.isEndingChar != false;
     }
 
     public class TrieNode {

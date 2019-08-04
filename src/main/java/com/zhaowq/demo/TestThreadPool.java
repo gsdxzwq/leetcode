@@ -1,21 +1,22 @@
-import java.io.UnsupportedEncodingException;
-import java.math.BigDecimal;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
+package com.zhaowq.demo;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
  * @author zhaowq
- * @date 2018/11/6
+ * @date 2019/6/4
  */
-public class Test {
-
-    @org.junit.Test
-    public void test() throws UnsupportedEncodingException {
-        String decode = URLDecoder.decode("%E5%BF%83%E6%A2%A6%EF%BD%9E%E6%97%A0%E7%97%95%F0%9F%95%B5", "UTF-8");
-        System.out.println(decode);
-        System.out.println(URLEncoder.encode(decode, "UTF-8"));
+public class TestThreadPool {
+    public static void main(String[] args) {
+        //(1)同步执行
+        System.out.println("---sync execute---");
+        //(2)异步执行操作one
+        asynExecuteOne();
+        //(3)异步执行操作two
+        asynExecuteTwo();
+        //(4)执行完毕
+        System.out.println("---execute over---");
     }
 
     static void asynExecuteOne() {
