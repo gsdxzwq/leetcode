@@ -38,4 +38,32 @@ public class Solution520 {
         }
         return ((cnt == 0 || cnt == word.length()) || (cnt == 1 && 'Z' - word.charAt(0) >= 0));
     }
+
+    public boolean detectCapitalUse2(String word) {
+        if (Character.isUpperCase(word.charAt(0))) {
+            // 首字母大写，则剩下的全大写或者全小写
+            return allUpper(word.substring(1)) || allLower(word.substring(1));
+        } else {
+            // 首字母小写，则剩下的全小写
+            return allLower(word.substring(1));
+        }
+    }
+
+    private boolean allUpper(String word) {
+        for (char c : word.toCharArray()) {
+            if (!Character.isUpperCase(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean allLower(String word) {
+        for (char c : word.toCharArray()) {
+            if (!Character.isLowerCase(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

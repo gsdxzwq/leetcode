@@ -19,7 +19,7 @@ public class Graph {
     /**
      * 邻接表
      */
-    private LinkedList<Integer> adj[];
+    private LinkedList<Integer>[] adj;
 
     public Graph(int v) {
         this.v = v;
@@ -90,7 +90,9 @@ public class Graph {
     }
 
     private void recurDfs(int w, int t, boolean[] visited, int[] prev) {
-        if (found == true) return;
+        if (found) {
+            return;
+        }
         visited[w] = true;
         if (w == t) {
             found = true;
